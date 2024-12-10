@@ -3,19 +3,16 @@
 # Ba'zi argumentlarni kiritishni ixtiyoriy qiling (masalan, tel.raqam, el.manzil)
 
 
-from datetime import datetime
 
-def malumotlar(ism, familiya, tyil, tjoyi, email=None, telefon=None):
-    # Hozirgi yilni aniqlash uchun
-    hozirgi_yil = datetime.now().year
-    yosh = hozirgi_yil - tyil
+
+def malumotlar(ism, familiya, yosh, tjoyi, email=None, telefon=None):
+    
 
     # Lug'atni shakllantirish
     malumot = {
         "ism": ism,
         "familiya": familiya,
         "yosh": yosh,
-        "tyil": tyil,
         "tjoyi": tjoyi,
         "email": email,
         "telefon": telefon,
@@ -33,4 +30,4 @@ print('Shaxslar ma\'lumotlari:')
 for malumot in info:
     email = malumot["email"] if malumot["email"] else "Nomalum"
     telefon = malumot["telefon"] if malumot["telefon"] else "Nomalum"
-    print(f"{malumot['ism']} {malumot['familiya']} - Yosh: {malumot['yosh']} yil, Email: {email}, Telefon: {telefon}")
+    print(f"{malumot['ism']} {malumot['familiya']} - Yosh: {malumot['yosh']} , Email: {email}, Telefon: {telefon}")
