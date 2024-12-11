@@ -5,7 +5,7 @@
 
 
 
-def malumotlar(ism, familiya, yosh, tjoyi, email=None, telefon=None):
+def malumotlar(ism, familiya, tyil, tjoyi, email=None, telefon=None):
     
 
     # Lug'atni shakllantirish
@@ -13,6 +13,7 @@ def malumotlar(ism, familiya, yosh, tjoyi, email=None, telefon=None):
         "ism": ism,
         "familiya": familiya,
         "yosh": yosh,
+        "tyil": tyil,
         "tjoyi": tjoyi,
         "email": email,
         "telefon": telefon,
@@ -30,4 +31,4 @@ print('Shaxslar ma\'lumotlari:')
 for malumot in info:
     email = malumot["email"] if malumot["email"] else "Nomalum"
     telefon = malumot["telefon"] if malumot["telefon"] else "Nomalum"
-    print(f"{malumot['ism']} {malumot['familiya']} - Yosh: {malumot['yosh']} , Email: {email}, Telefon: {telefon}")
+    print(f"{malumot['ism']} {malumot['familiya']} - Yosh: {malumot['yosh']} yil, Email: {email}, Telefon: {telefon}")
