@@ -24,3 +24,4 @@ for kalit,qiymat in talaba1.items():
 print("\n******")
 for kalit,qiymat in talaba2.items():
     print(f"{kalit.title()}: {qiymat}")
+
